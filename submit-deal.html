@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Submit Deal | ClearMark Capital</title><link rel="stylesheet" href="styles.css" /></head>
+  <body>
+    <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">ClearMark Capital</a><nav><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="approach.html">Our Approach</a></li><li><a href="contact.html">Contact</a></li><li><a href="submit-deal.html" class="active">Submit Deal</a></li></ul></nav></div></header>
+    <main class="section container form-wrap">
+      <h1>Submit a Deal</h1>
+      <p class="muted">For authorized brokers and sponsors only.</p>
+      <form id="dealForm" class="deal-form">
+        <label>Company Name<input required type="text" name="company" /></label>
+        <label>Contact Name<input required type="text" name="contact" /></label>
+        <label>Email<input required type="email" name="email" /></label>
+        <label>Deal Type<select name="dealType"><option>Commercial Real Estate</option><option>Operating Company</option><option>Structured Credit</option></select></label>
+        <label>Requested Amount (USD)<input required type="number" name="amount" min="100000" step="10000" /></label>
+        <label>Summary<textarea required name="summary" rows="5" placeholder="Property/business overview, timeline, and use of proceeds."></textarea></label>
+        <button type="submit" class="btn">Submit Deal</button>
+        <p id="dealMsg" class="muted"></p>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,135 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | ClearMark Credit Advisors</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<form
+  class="card"
+  action="https://formspree.io/f/meajbanw"
+  method="POST"
+>
+  <input type="hidden" name="_subject" value="New ClearMark Deal Scenario Submission" />
 
-  <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html">ClearMark Credit Advisors</a>
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
-        <nav>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="approach.html">Approach</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-            <li>
-              <a href="contact.html#deal-intake" class="btn btn-outline">Submit a Deal</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <label for="name">Your Name</label>
+  <input id="name" name="Name" type="text" required autocomplete="name" />
 
-    <main>
-      <section class="section container prose">
-        <h1>Contact ClearMark</h1>
+  <label for="email">Email</label>
+  <input id="email" name="Email" type="email" required autocomplete="email" />
 
-        <p class="lead">
-          Have a real estate financing scenario that needs lender alignment? Send the basic details below and ClearMark will review the request and identify the likely financing path, lender fit, and next steps.
-        </p>
+  <label for="phone">Phone</label>
+  <input id="phone" name="Phone" type="tel" autocomplete="tel" />
 
-        <p>
-          For direct inquiries, email:
-          <a href="mailto:maryann@clearmarkcreditadvisors.com">maryann@clearmarkcreditadvisors.com</a>
-        </p>
-      </section>
+  <label for="sponsor">Borrower / Sponsor Name</label>
+  <input id="sponsor" name="Borrower or Sponsor Name" type="text" />
 
-      <section id="deal-intake" class="section container">
-        <h2>Submit a Deal Scenario</h2>
+  <label for="location">Property Address or City / State</label>
+  <input id="location" name="Property Address or City State" type="text" />
 
-        <p class="lead section-subtitle">
-          Share the basic deal details. You do not need a perfect package to start.
-        </p>
+  <label for="property-type">Property Type</label>
+  <select id="property-type" name="Property Type">
+    <option value="">Select one</option>
+    <option>Single-family rental</option>
+    <option>2-4 unit residential investment</option>
+    <option>Multifamily</option>
+    <option>Mixed-use</option>
+    <option>Retail</option>
+    <option>Office</option>
+    <option>Industrial</option>
+    <option>Hospitality</option>
+    <option>Land</option>
+    <option>Other commercial real estate</option>
+  </select>
 
-        <form class="card" action="mailto:maryann@clearmarkcreditadvisors.com" method="post" enctype="text/plain">
-          <label for="name">Your Name</label>
-          <input id="name" name="Name" type="text" required />
+  <label for="loan-purpose">Loan Purpose</label>
+  <select id="loan-purpose" name="Loan Purpose">
+    <option value="">Select one</option>
+    <option>Purchase</option>
+    <option>Refinance</option>
+    <option>Cash-out refinance</option>
+    <option>DSCR rental loan</option>
+    <option>Bridge loan</option>
+    <option>Construction</option>
+    <option>Rehab / renovation</option>
+    <option>Fix and flip</option>
+    <option>Commercial property loan</option>
+    <option>SBA / owner-user financing</option>
+    <option>Other</option>
+  </select>
 
-          <label for="email">Email</label>
-          <input id="email" name="Email" type="email" required />
+  <label for="loan-amount">Requested Loan Amount</label>
+  <input id="loan-amount" name="Requested Loan Amount" type="text" placeholder="$" />
 
-          <label for="phone">Phone</label>
-          <input id="phone" name="Phone" type="tel" />
+  <label for="value">Estimated Value or Purchase Price</label>
+  <input id="value" name="Estimated Value or Purchase Price" type="text" placeholder="$" />
 
-          <label for="sponsor">Borrower / Sponsor Name</label>
-          <input id="sponsor" name="Borrower or Sponsor Name" type="text" />
+  <label for="timeline">Timeline to Close</label>
+  <input
+    id="timeline"
+    name="Timeline to Close"
+    type="text"
+    placeholder="Example: 30 days, ASAP, refinance timing flexible"
+  />
 
-          <label for="location">Property Address or City / State</label>
-          <input id="location" name="Property Address or City State" type="text" />
+  <label for="summary">Brief Deal Summary</label>
+  <textarea
+    id="summary"
+    name="Brief Deal Summary"
+    rows="7"
+    placeholder="Tell us the property type, loan request, use of funds, sponsor background, income/rent details, and any timing issues."
+  ></textarea>
 
-          <label for="property-type">Property Type</label>
-          <select id="property-type" name="Property Type">
-            <option value="">Select one</option>
-            <option>Single-family rental</option>
-            <option>2-4 unit residential investment</option>
-            <option>Multifamily</option>
-            <option>Mixed-use</option>
-            <option>Retail</option>
-            <option>Office</option>
-            <option>Industrial</option>
-            <option>Hospitality</option>
-            <option>Land</option>
-            <option>Other commercial real estate</option>
-          </select>
+  <p class="muted">
+    Please do not submit Social Security numbers, bank account numbers, tax returns, photo IDs, credit reports, or other sensitive personal documents through this form. ClearMark will request documents through a secure channel if needed.
+  </p>
 
-          <label for="loan-purpose">Loan Purpose</label>
-          <select id="loan-purpose" name="Loan Purpose">
-            <option value="">Select one</option>
-            <option>Purchase</option>
-            <option>Refinance</option>
-            <option>Cash-out refinance</option>
-            <option>DSCR rental loan</option>
-            <option>Bridge loan</option>
-            <option>Construction</option>
-            <option>Rehab / renovation</option>
-            <option>Fix and flip</option>
-            <option>Commercial property loan</option>
-            <option>SBA / owner-user financing</option>
-            <option>Other</option>
-          </select>
-
-          <label for="loan-amount">Requested Loan Amount</label>
-          <input id="loan-amount" name="Requested Loan Amount" type="text" placeholder="$" />
-
-          <label for="value">Estimated Value or Purchase Price</label>
-          <input id="value" name="Estimated Value or Purchase Price" type="text" placeholder="$" />
-
-          <label for="timeline">Timeline to Close</label>
-          <input id="timeline" name="Timeline to Close" type="text" placeholder="Example: 30 days, ASAP, refinance timing flexible" />
-
-          <label for="summary">Brief Deal Summary</label>
-          <textarea id="summary" name="Brief Deal Summary" rows="7" placeholder="Tell us the property type, loan request, use of funds, sponsor background, income/rent details, and any timing issues."></textarea>
-
-          <button type="submit" class="btn">Submit Deal Scenario</button>
-        </form>
-
-        <p class="muted">
-          Financing is subject to underwriting, lender approval, capital partner approval, and applicable state licensing and regulatory requirements. ClearMark does not guarantee loan approval, terms, or funding.
-        </p>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <p>
-          ClearMark Credit Advisors supports business-purpose real estate financing. Financing is subject to underwriting, lender approval, capital partner approval, and applicable state licensing and regulatory requirements. ClearMark does not guarantee loan approval, terms, or funding.
-        </p>
-
-        <p>ClearMark Credit Advisors</p>
-
-        <p>
-          Contact:
-          <a href="mailto:maryann@clearmarkcreditadvisors.com">maryann@clearmarkcreditadvisors.com</a>
-        </p>
-
-        <p>© 2026 ClearMark Credit Advisors</p>
-      </div>
-    </footer>
-  </body>
-</html>
+  <button type="submit" class="btn">Submit Deal Scenario Securely</button>
+</form>
